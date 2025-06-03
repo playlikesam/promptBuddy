@@ -1,3 +1,59 @@
+# PromptBuddy – Laravel + Social AI Integration Guide
+
+This repository contains a Laravel 10+ project set up using GitHub Codespaces. The goal is to prepare a clean, maintainable backend structure for integrating the **Social AI** application purchased from CodeCanyon.
+
+---
+
+## ✅ Prerequisites (already present in Codespaces)
+- PHP 8.2+
+- Composer
+- Git
+- SQLite
+- Laravel 10+
+- GitHub Codespaces (in-browser IDE)
+
+---
+
+## 📦 Project Setup Steps
+
+### 1. Create Laravel in Existing Folder
+```bash
+composer create-project laravel/laravel temp-laravel
+mv temp-laravel/* .
+mv temp-laravel/.* . 2>/dev/null
+rm -rf temp-laravel
+```
+
+###Install Dependencies
+```
+composer install
+
+```
+
+##Integrating the Social AI App
+After purchasing and downloading Social AI from CodeCanyon, you’ll get 2 folders:
+
+###Backend
+
+###Frontend
+
+##Follow These Steps:
+1. Extract the Backend folder.
+2. Copy its contents and replace or merge with your Laravel project files.
+3. Follow its setup instructions (usually in documentation/installation.txt), including:
+
+```
+php artisan migrate
+php artisan db:seed
+php artisan storage:link
+```
+###Update .env if required (especially any API keys or auth settings).
+
+###If the Frontend is Laravel/Vite-based, place it inside resources/ or configure it separately.
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
